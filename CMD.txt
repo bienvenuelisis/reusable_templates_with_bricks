@@ -16,12 +16,12 @@ mason make hello --name GalsenDev
 
 _______________________________________________________________________
 
-mason add -g model_freezed_json --path ./model_freezed_json
-mason make model_freezed_json
-
+mason add -g riverpod_feature --git-url https://github.com/bienvenuelisis/mason_bricks --git-path bricks/riverpod_feature --git-ref main
+mason make riverpod_feature -o ./lib/features/
 _______________________________________________________________________
 
-mason add widget --git-url https://github.com/vinothvino42/mason_bricks --git-path bricks/riverpod_feature --git-ref main
+mason add -g model_freezed_json --path ../model_freezed_json
+mason make model_freezed_json
 
 _______________________________________________________________________
 
