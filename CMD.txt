@@ -11,36 +11,69 @@ cd cobaye
 flutter packages pub get
 _______________________________________________________________________
 
-mason add -g hello
+mason add -g hello --git-url https://github.com/felangel/mason --git-path bricks/hello --git-ref master
 mason make hello --name GalsenDev
-
 _______________________________________________________________________
 
-mason add -g riverpod_feature --git-url https://github.com/bienvenuelisis/mason_bricks --git-path bricks/riverpod_feature --git-ref main
-mason make riverpod_feature -o ./lib/features/
+mason add -g feature_brick_plus
+mason make feature_brick_plus --feature_name auth -o ./lib/features/
 _______________________________________________________________________
 
 mason add -g model_freezed_json --path ../model_freezed_json
-mason make model_freezed_json
+mason make model_freezed_json  -o ./lib/features/auth/models
+
+---------------------------
+
+cd C:\D\Professional\Code\00auth.dev\reusable_templates_with_bricks\cobaye
+flutter pub add freezed_annotation:'^2.4.4'
+flutter pub add dev:freezed:'^2.5.8'
+flutter pub add json_annotation:'^4.9.0'
+flutter pub add dev:json_serializable:'^6.9.4'
+flutter pub add dev:build_runner
+dart run build_runner watch --use-polling-watcher --delete-conflicting-outputs
 
 _______________________________________________________________________
 
 mason add -g ui_package
-mason make ui_package
+mason make ui_package -o ./packages
+
+---------------------------
+
+dart pub add "ui_package:{path: ./packages/ui_package}"
 
 _______________________________________________________________________
 
 mason add -g flutter_news_template
+cd ..
 mason make flutter_news_template
 
 _______________________________________________________________________
 
+cd C:\D\Professional\Code\00auth.dev\reusable_templates_with_bricks
 mkdir miabe_bricks
 cd miabe_bricks
 
 _______________________________________________________________________
+---riverpod_feature_brick---
 
+mason new riverpod_feature_brick --desc "Riverpod Feature Folders Brick" -o ./miabe_bricks/riverpod_feature_brick
 
+---------------------------
+
+cd C:\D\Professional\Code\00auth.dev\reusable_templates_with_bricks
+mason add -g riverpod_feature_brick --path ./miabe_bricks/riverpod_feature_brick
+mason make riverpod_feature_brick --feature_name auth --model_name user -o ./cobaye/lib/features
+cd cobaye
+flutter pub add flutter_riverpod
+flutter pub get
+-----
+flutter pub add freezed_annotation:'^2.4.4'
+flutter pub add dev:freezed:'^2.5.8'
+flutter pub add json_annotation:'^4.9.0'
+flutter pub add dev:json_serializable:'^6.9.4'
+flutter pub add dev:build_runner
+flutter pub get
+dart run build_runner watch --use-polling-watcher --delete-conflicting-outputs
 
 _______________________________________________________________________
 
