@@ -7,11 +7,12 @@ dart pub global activate mason_cli
 _______________________________________________________________________
 
 flutter create cobaye --empty --platforms=android
-
+cd cobaye
+flutter packages pub get
 _______________________________________________________________________
 
 mason add -g hello
-mason make hello --name GalsenDev -o /cobaye
+mason make hello --name GalsenDev
 
 _______________________________________________________________________
 
