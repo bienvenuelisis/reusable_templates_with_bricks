@@ -12,6 +12,7 @@ part '{{model_name.snakeCase()}}.g.dart';
 class {{model_name.pascalCase()}} with _${{model_name.pascalCase()}} {
   const factory {{model_name.pascalCase()}}({
     /// Documentation for your parameter
+    required String id,
     required String placeholder,
   }) = _{{model_name.pascalCase()}};
 

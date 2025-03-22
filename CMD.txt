@@ -67,6 +67,7 @@ cd cobaye
 flutter pub add flutter_riverpod
 flutter pub get
 -----
+flutter pub add uuid
 flutter pub add freezed_annotation:'^2.4.4'
 flutter pub add dev:freezed:'^2.5.8'
 flutter pub add json_annotation:'^4.9.0'
