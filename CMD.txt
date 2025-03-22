@@ -1,0 +1,45 @@
+cd C:\D\Professional\Code\00auth.dev\reusable_templates_with_bricks
+
+_______________________________________________________________________
+
+dart pub global activate mason_cli
+
+_______________________________________________________________________
+
+flutter create cobaye --empty --platforms=android
+
+_______________________________________________________________________
+
+mason add -g hello
+mason make hello --name GalsenDev -o /cobaye
+
+_______________________________________________________________________
+
+mason add -g model_freezed_json --path ./model_freezed_json
+mason make model_freezed_json
+
+_______________________________________________________________________
+
+mason add widget --git-url https://github.com/vinothvino42/mason_bricks --git-path bricks/riverpod_feature --git-ref main
+
+_______________________________________________________________________
+
+mason add -g ui_package
+mason make ui_package
+
+_______________________________________________________________________
+
+mason add -g flutter_news_template
+mason make flutter_news_template
+
+_______________________________________________________________________
+
+mkdir miabe_bricks
+cd miabe_bricks
+
+_______________________________________________________________________
+
+
+
+_______________________________________________________________________
+
