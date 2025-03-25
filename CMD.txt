@@ -77,4 +77,10 @@ flutter pub get
 dart run build_runner watch --use-polling-watcher --delete-conflicting-outputs
 
 _______________________________________________________________________
+---Publish mason brick to brick hub---
 
+C:\D\Professional\Code\00auth.dev\reusable_templates_with_bricks\miabe_bricks
+
+1. Login : mason login
+2. Publish : mason publish --directory ./riverpod_feature_brick
+---------------------------

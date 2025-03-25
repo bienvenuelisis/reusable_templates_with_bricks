@@ -1,9 +1,6 @@
 name: riverpod_feature_brick
-description: Riverpod Feature Folders Brick
-
-# The following defines the brick repository url.
-# Uncomment and update the following line before publishing the brick.
-# repository: https://github.com/my_org/my_repo
+description: A brick to generate a feature using riverpod as state manager.
+repository: https://github.com/bienvenuelisis/reusable_templates_with_bricks
 
 # The following defines the version and build number for your brick.
 # A version number is three numbers separated by dots, like 1.2.34
