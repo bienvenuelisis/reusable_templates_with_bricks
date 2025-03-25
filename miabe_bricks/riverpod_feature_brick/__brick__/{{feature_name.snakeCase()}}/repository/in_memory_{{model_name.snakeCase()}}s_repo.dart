@@ -2,6 +2,8 @@ import 'package:uuid/uuid.dart';
 
 import './i_{{model_name.snakeCase()}}s_repo.dart';
 
+export './i_{{model_name.snakeCase()}}s_repo.dart';
+
 class InMemory{{model_name.pascalCase()}}sRepo extends I{{model_name.pascalCase()}}sRepo {
 
   final List<{{model_name.pascalCase()}}> _{{model_name.camelCase()}}s = [];

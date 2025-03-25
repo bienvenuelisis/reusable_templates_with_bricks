@@ -2,6 +2,8 @@ import 'package:uuid/uuid.dart';
 
 import './i_users_repo.dart';
 
+export './i_users_repo.dart';
+
 class InMemoryUsersRepo extends IUsersRepo {
 
   final List<User> _users = [];
@@ -23,7 +25,7 @@ class InMemoryUsersRepo extends IUsersRepo {
 
   @override
   Future<String?> create(UserData userData) async {
-    final User user = User(
+    final User {const const {model_name.camelCase()}} = User(
       id: Uuid().v4(),
       placeholder: userData.placeholder,
     );
