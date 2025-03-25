@@ -25,7 +25,7 @@ class InMemoryUsersRepo extends IUsersRepo {
 
   @override
   Future<String?> create(UserData userData) async {
-    final User {const const {model_name.camelCase()}} = User(
+    final User user = User(
       id: Uuid().v4(),
       placeholder: userData.placeholder,
     );

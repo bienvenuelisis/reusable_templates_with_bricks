@@ -1,4 +1,4 @@
-name: riverpod_feature_brick
+name: riverpod_feature_brick_plus
 description: A brick to generate a feature using riverpod as state manager.
 repository: https://github.com/bienvenuelisis/reusable_templates_with_bricks/tree/main/miabe_bricks/riverpod_feature_brick
 version: 0.1.0+1

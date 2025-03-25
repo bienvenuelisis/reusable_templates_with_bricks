@@ -54,15 +54,15 @@ mkdir miabe_bricks
 cd miabe_bricks
 
 _______________________________________________________________________
----riverpod_feature_brick---
+---riverpod_feature_brick_plus---
 
-mason new riverpod_feature_brick --desc "Riverpod Feature Folders Brick" -o ./miabe_bricks/riverpod_feature_brick
+mason new riverpod_feature_brick_plus --desc "Riverpod Feature Folders Brick" -o ./miabe_bricks/riverpod_feature_brick
 
 ---------------------------
 
 cd C:\D\Professional\Code\00auth.dev\reusable_templates_with_bricks
-mason add -g riverpod_feature_brick --path ./miabe_bricks/riverpod_feature_brick
-mason make riverpod_feature_brick --feature_name auth --model_name user -o ./cobaye/lib/features
+mason add -g riverpod_feature_brick_plus --path ./miabe_bricks/riverpod_feature_brick
+mason make riverpod_feature_brick_plus --feature_name auth --model_name user -o ./cobaye/lib/features
 cd cobaye
 flutter pub add flutter_riverpod
 flutter pub get
@@ -83,4 +83,5 @@ C:\D\Professional\Code\00auth.dev\reusable_templates_with_bricks\miabe_bricks
 
 1. Login : mason login
 2. Publish : mason publish --directory ./riverpod_feature_brick
+3. Logout : mason logout
 ---------------------------
